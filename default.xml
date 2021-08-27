@@ -10,7 +10,9 @@
     <linkfile src="kleaf/bazel.WORKSPACE" dest="WORKSPACE" />
   </project>
   <project path="hikey-modules" name="kernel/hikey-modules" revision="android13-5.10" />
-  <project path="common" name="kernel/common" revision="android13-5.10" />
+  <project path="common" name="kernel/common" revision="android13-5.10" >
+    <linkfile src="." dest=".source_date_epoch_dir" />
+  </project>
   <project path="kernel/common-patches" name="kernel/common-patches" >
       <linkfile src="android-mainline" dest="common/patches" />
   </project>
