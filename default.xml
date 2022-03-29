@@ -3,7 +3,7 @@
   <remote  name="aosp" fetch=".." review="https://android-review.googlesource.com/" />
   <default revision="master" remote="aosp" sync-j="4" />
 
-  <superproject name="kernel/superproject" remote="aosp" revision="common-android13-5.10" />
+  <superproject name="kernel/superproject" remote="aosp" revision="common-android13-5.10-lts" />
 
   <project path="build/kernel" name="kernel/build" >
     <linkfile src="kleaf/bazel.sh" dest="tools/bazel" />
@@ -20,7 +20,7 @@
     <linkfile src="static_analysis" dest="build/static_analysis" />
   </project>
   <project path="hikey-modules" name="kernel/hikey-modules" revision="android13-5.10" />
-  <project path="common" name="kernel/common" revision="android13-5.10" >
+  <project path="common" name="kernel/common" revision="android13-5.10-lts" >
     <linkfile src="." dest=".source_date_epoch_dir" />
   </project>
   <project path="kernel/common-patches" name="kernel/common-patches" >
