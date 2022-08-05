@@ -23,9 +23,6 @@
   <project path="common" name="kernel/common" revision="android13-5.10-lts" >
     <linkfile src="." dest=".source_date_epoch_dir" />
   </project>
-  <project path="kernel/common-patches" name="kernel/common-patches" >
-      <linkfile src="android-mainline" dest="common/patches" />
-  </project>
   <project path="kernel/tests" name="kernel/tests" />
   <project path="kernel/configs" name="kernel/configs" revision="master" />
   <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="android13-5.10" />
