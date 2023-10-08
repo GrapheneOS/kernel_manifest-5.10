@@ -23,7 +23,7 @@
     <linkfile src="static_analysis" dest="build/static_analysis" />
   </project>
   <project path="hikey-modules" name="kernel/hikey-modules" revision="android13-5.10" />
-  <project path="common" name="kernel/common" revision="android13-5.10-lts" >
+  <project path="common" name="kernel_common-5.10" remote="grapheneos" >
     <linkfile src="." dest=".source_date_epoch_dir" />
   </project>
   <project path="kernel/tests" name="kernel/tests" />
