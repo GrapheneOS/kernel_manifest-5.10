@@ -3,7 +3,7 @@
   <remote  name="aosp" fetch="https://android.googlesource.com/" review="https://android-review.googlesource.com/" />
   <remote  name="grapheneos"
     fetch="https://github.com/GrapheneOS/"
-    revision="refs/heads/14" />
+    revision="refs/tags/2024032100-redfin" />
   <default revision="master-kernel-build-2022" remote="aosp" sync-j="4" />
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android13-5.10-lts" />
